@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <h1 class="heading text-center">
+      S P L I<br />
+      T T E R
+    </h1>
+    <section class="container">
+      <div class="enters">
+        <div class="bill">
+          <label class="bill__label"> Bill </label>
+          <input class="bill__input" type="number" />
+          <img
+            class="bill__img"
+            src="assets/images/icon-dollar.svg"
+            alt="dollar symbol"
+          />
+        </div>
+        <div class="menu">
+          <label class="menu__label"> Select Tip %</label>
+          <div class="tips">
+            <button class="tips__btn">5%</button>
+            <button class="tips__btn">10%</button>
+            <button class="tips__btn">15%</button>
+            <button class="tips__btn">25%</button>
+            <button class="tips__btn">50%</button>
+            <input class="tips__btn custom" placeholder="Custom" />
+          </div>
+        </div>
+        <div class="people">
+          <div class="alert">
+            <label class="people__label">Number of People </label>
+            <p class="span"></p>
+          </div>
+          <input class="people__input" type="number" />
+          <img class="peopel__img" src="assets/images/icon-person.svg" />
+        </div>
+      </div>
+      <div class="results">
+        <div class="gap">
+          <label class="results__label"> Tip Amount</label>
+          <input class="results__input total-tip" />
+          <span class="result__span">/ person</span>
+          <label class="results__label">Total</label>
+          <input class="results__input total-person" />
+          <span class="result__span">/ person</span>
+        </div>
+        <button class="results__btn">RESET</button>
+      </div>
+    </section>
+    <script src="assets/js/tipApp.js"></script>
+  </body>
+</html>
